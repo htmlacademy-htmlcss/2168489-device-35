@@ -5,8 +5,135 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <a class="logo"><img src="#" alt="DEVICE"></a>
+      <form class="site-search">
+      <input type="search" name="search" id="search" class="search">
+      <button type="submit" class="search-button">Найти</button>
+      </form>
+      <ul>
+          <li><a href="#" class="menu-button">Войти</a></li>
+          <li><a href="#" class="menu-button">Сравнить</a></li>
+          <li><a href="#" class="menu-button">Корзина</a></li>
+      </ul>
+      <ul>
+          <li><button class="main-catalogue">КАТАЛОГ ТОВАРОВ</button></li>
+      </ul>
+      <nav class="navigation">
+      <ul class="navigation-list">
+          <li class="navigation-item"><a href="#" class="navigation-link">ДОСТАВКА</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link">ГАРАНТИЯ</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link">КОНТАКТЫ</a></li>
+      </ul>
+      </nav>
+         </header>
+         <main>
+          <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+          <section class="slider">
+          <button class="arrow-left"><img src="#" alt="Стрелка влево"></button>
+          <img src="#" alt="Фото дрона">
+          <button class="arrow-right"><img src="#" alt="Стрелка вправо"></button>
+          <h2 class="title">Порхает как бабочка, жалит как пчела!</h2>
+          <p class="info-text"> Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="#" class="benifit-button">ПОДРОБНЕЕ</a>
+          <table>
+          <tr>
+          <td class="text-number">800 м</td>
+          <td class="text-number">50 м</td>
+          </tr>
+          <tr>
+          <td class="text-benifit">Дальность полета</td>
+          <td class="text-benifit">Радиус поражения</td>
+          </tr>
+          </table>
+          <button class="slider-button-active">.</button>
+          <button class="slider-button-nonactive">.</button>
+          <button class="slider-button-nonactive">.</button>
+          </section>
+          <section class="catalogue">
+          <ul class="catalogue-list">
+           <li class="catalogue-item"><img src="#" alt="Виртуальная реальность" class="catalogue-icon"><a href="#" class="catalogue-link">Виртуальная<br>реальность</a></li>
+           <li class="catalogue-item"><img src="#" alt="Моноподы для селфи" class="catalogue-icon"><a href="#" class="catalogue-link">Моноподы<br>для селфи</a></li>
+           <li class="catalogue-item"><img src="#" alt="Экшн-камеры" class="catalogue-icon"><a href="#" class="catalogue-link">Экшн-камеры</a></li>
+           <li class="catalogue-item"><img src="#" alt="Фитнес-браслеты" class="catalogue-icon"><a href="#" class="catalogue-link">Фитнес-браслеты</a></li>
+           <li class="catalogue-item"><img src="#" alt="Умные часы" class="catalogue-icon"><a href="#" class="catalogue-link">Умные часы</a></li>
+           <li class="catalogue-item"><img src="#" alt="Квадрокоптеры" class="catalogue-icon"><a href="#" class="catalogue-link">Квадрокоптеры</a></li>
+          </ul>
+          </section>
+          <section class="benifits">
+          <ul>
+          <li><button class="benifit-button">ДОСТАВКА</button></li>
+          <li><button class="benifit-button">ГАРАНТИЯ</button></li>
+          <li><button class="benifit-button">КРЕДИТ</button></li>
+          </ul>
+          <h2 class="title">Доставка</h2>
+          <p class="info-text">Мы с удовольствием доставим ваш товар прямо<br>
+          к вашему подъезду совершенно бесплатно! Ведь<br>
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+          <section class="about-us">
+          <img src="#" alt="Доставка">
+          <button class="rare-item-delivery">ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</button>
+          <img src="#" alt="i">
+          <table>
+              <tr>
+              <td><h3 class="about-us-title">О нас</h3></td>
+              <td><h3 class="about-us-title">Контакты</h3></td>
+              </tr>
+              <tr>
+              <td class="info-about-us">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</td>
+              <td class="info-about-us">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</td>
+              </tr>
+              <tr>
+              <td class="info-about-us">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</td>
+              <td><h4>Интернет-магазин «Девайс»</h4></td>
+              </tr>
+              <tr>
+              <td><ul class="shipping">
+              <li class="shipping-company">Меловые линии</li>
+              <li class="shipping-company">СДИК</li>
+              <li class="shipping-company">ТоксБерри</li>
+              </ul></td>
+              <td><br>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+                  <a href="+78128121212" class="about-us-phone">+7 (812) 812-12-12</a><br>
+              <h4>Время работы</h4>
+              пн—пт: с 10:00 до 22:00<br>
+              сб—вс: с 10:00 до 19:00</td>
+              </tr>
+              <tr>
+              <td><a href="#" class="benifit-button">ПОДРОБНЕЕ О НАС</a></td>
+              <td><a href="#" class="benifit-button">НАПИШИТЕ НАМ</a></td>
+              </tr>
+          </table>
+          </section>
+          <section class="subscribe">
+          <h3>Подпишитесь<br>на рассылку</h3>
+          <p class="info-subscribe">Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br>
+          спецпредложения и вот это вот всё.</p>
+          <form>
+          <input type="email" name="email">
+          <button type="submit">ПОДПИСАТЬСЯ</button>
+          </form>
+          <p><span class="green-check">✓</span> Это бесплатно</p>
+          </section>
+         </main>
+         <footer class="page-footer">
+          <a href="#" class="logo-footer">DEVICE</a>
+          <p>Санкт-Петербург, набережная<br>
+          реки Карповки, 5, литера П.</p>
+          <ul class="footer-navigation-list">
+          <li class="footer-item"><a href="#" class="footer-navigation-link">ДОСТАВКА</a></li>
+          <li class="footer-item"><a href="#" class="footer-navigation-link">ГАРАНТИЯ</a></li>
+          <li class="footer-item"><a href="#" class="footer-navigation-link">КОНТАКТЫ</a></li>
+          </ul>
+          <a href="+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
+          <ul class="social-buttons">
+              <li class="social-button"><a href="t.me/htmlacademy"><img src="#" alt="Telegram"></a></li>
+              <li class="social-button"><a href="youtube.com/user/htmlacademyru"><img src="#" alt="YouTube"></a></li>
+              <li class="social-button"><a href="twitter.com/htmlacademy_ru"><img src="#" alt="Instagram"></a></li>
+          </ul>
+          <a href="#"><img src="https://htmlacademy.ru/" alt="HTML ACADEMY"></a>
+         </footer>
   </body>
 </html>
