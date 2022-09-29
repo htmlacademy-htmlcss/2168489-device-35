@@ -31,18 +31,16 @@
           <section class="catalogue-info">
           <h1 class="main-title">Моноподы для селфи</h1>
           <ul class="catalogue-navigation">
-            <li class="catalogue-navigation-item"><a href="index.html" class=" catalogue-navigation-link">Главная</a></li> <p class="navigation-arrow">></p>
-            <li class="catalogue-navigation-item"><a href="#" class=" catalogue-navigation-link"> Каталог товаров</a></li> <p class="navigation-arrow">></p>
-            <li class="catalogue-navigation-item"><a href="#" class=" catalogue-navigation-link"> Моноподы для селфи</a></li>
+            <li class="catalogue-navigation-item"><a href="index.html" class=" catalogue-navigation-link">Главная</a></li>
+            <li class="catalogue-navigation-item"><a href="#" class=" catalogue-navigation-link"> Каталог товаров</a></li>
+            <li class="catalogue-navigation-item"><a class=" catalogue-navigation-link"> Моноподы для селфи</a></li>
           </ul>
           </section>
           <section class="filters">
+            <form>
             <h4 class="filter-title"> Фильтр:</h4>
-            <div class="line">___________</div>
             <h5 class="filter-item">Стоимость</h5>
-            <div class="line">___________</div>
            <p class="price-start">от 0</p><input type="range" min="0" max="12000" class="price-filter"> <p class="price-end">до 5000</p>
-           <div class="line">___________</div>
            <h5 class="filter-item">Цвет</h5>
            <input type="checkbox" name="color" id="color-black" checked class="checkbox-color">
            <label for="color-black" class="color-name">Чёрный</label>
@@ -54,19 +52,19 @@
            <label for="color-red" class="color-name">Красный</label>
            <input type="checkbox" name="color" id="color-pink" class="checkbox-color">
            <label for="color-pink" class="color-name">Розовый</label>
-           <div class="line">___________</div>
            <h5 class="filter-item">Bluetooth</h5>
            <label><input type="radio" name="bluetooth-button" value="yes">Есть</label>
            <input type="radio" name="bluetooth-button" value="no">Нет</label>
-           <button class="benifit-button">ПОКАЗАТЬ</button>
+           <button type="button" class="benifit-button">ПОКАЗАТЬ</button>
+           </form>
           </section>
           <section class="goods-filter">
             <h4 class="filter-title">СОРТИРОВКА:</h4>
             <select>
               <option>Популярные</option>
             </select>
-            <button class="arrow-filter-up"><</button>
-            <button class="arrow-filter-down">></button>
+            <button class="arrow-filter-up">По возрастанию</button>
+            <button class="arrow-filter-down">По убыванию</button>
           </section>
           <section class="catalogue-goods">
             <ul class="goods">
@@ -96,13 +94,13 @@
           <li class="footer-item"><a href="#" class="footer-navigation-link">ГАРАНТИЯ</a></li>
           <li class="footer-item"><a href="#" class="footer-navigation-link">КОНТАКТЫ</a></li>
           </ul>
-          <a href="+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
+          <a href="tel:+78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
           <ul class="social-buttons">
               <li class="social-button"><a href="t.me/htmlacademy"><img src="#" alt="Telegram"></a></li>
               <li class="social-button"><a href="youtube.com/user/htmlacademyru"><img src="#" alt="YouTube"></a></li>
               <li class="social-button"><a href="twitter.com/htmlacademy_ru"><img src="#" alt="Instagram"></a></li>
           </ul>
-          <a href="#"><img src="https://htmlacademy.ru/" alt="HTML ACADEMY"></a>
+          <a href="https://htmlacademy.ru/"><img src="#" alt="HTML ACADEMY"></a>
          </footer>
   </body>
 </html>
