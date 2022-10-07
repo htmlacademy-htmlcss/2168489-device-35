@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,23 +11,23 @@
         <img src="images//logos/logo.svg" height="36" width="145" alt="DEVICE">
       </a>
       <form class="site-search">
-      <input type="search" name="search" id="search" class="search">
+      <input type="search" name="search" id="search" class="search" placeholder="Поиск по сайту">
       <button type="submit" class="search-button">Найти</button>
       </form>
       <ul>
-          <li>
+          <li class="menu-items">
             <a href="#" class="menu-button">Коля Петухов</a>
           </li>
-          <li>
+          <li class="menu-items">
             <a href="#" class="menu-button">Сравнить</a>
           </li>
-          <li>
+          <li class="menu-items">
             <a href="#" class="menu-button">Корзина</a>
           </li>
       </ul>
       <nav class="navigation">
         <div class="navigation-list">
-          <button type="button" class="navigation-link">Каталог товаров</button>
+          <button type="button" class="navigation-button">Каталог товаров</button>
         </div>
         <ul>
           <li class="navigation-item">
@@ -43,24 +44,27 @@
          </header>
          <main>
           <section class="catalogue-info">
-          <h1 class="main-title">Моноподы для селфи</h1>
+          <h1 class="main-title-catalogue"><b>Моноподы для селфи</b></h1>
           <ul class="catalogue-navigation">
             <li class="catalogue-navigation-item">
-              <a href="index.html" class=" catalogue-navigation-link">Главная</a>
+              <a href="index.html" class="catalogue-navigation-link">Главная</a>
             </li>
             <li class="catalogue-navigation-item">
-              <a href="#" class=" catalogue-navigation-link"> Каталог товаров</a>
+              <a href="#" class="catalogue-navigation-link">Каталог товаров</a>
             </li>
             <li class="catalogue-navigation-item">
-              <a class=" catalogue-navigation-link"> Моноподы для селфи</a>
+              <a class="catalogue-navigation-link">Моноподы для селфи</a>
             </li>
           </ul>
           </section>
           <section class="filters">
             <form>
             <h4 class="filter-title"> Фильтр:</h4>
+           <fieldset class="fieldset-filter">
             <h5 class="filter-item">Стоимость</h5>
            <p class="price-start">от 0</p><input type="range" min="0" max="12000" class="price-filter"> <p class="price-end">до 5000</p>
+          </fieldset>
+           <fieldset class="fieldset-filter">
            <h5 class="filter-item">Цвет</h5>
            <input type="checkbox" name="color" id="color-black" checked class="checkbox-color">
            <label for="color-black" class="color-name">Чёрный</label>
@@ -72,10 +76,13 @@
            <label for="color-red" class="color-name">Красный</label>
            <input type="checkbox" name="color" id="color-pink" class="checkbox-color">
            <label for="color-pink" class="color-name">Розовый</label>
+          </fieldset>
+          <fieldset class="fieldset-filter">
            <h5 class="filter-item">Bluetooth</h5>
-           <label><input type="radio" name="bluetooth-button" value="yes">Есть</label>
-           <input type="radio" name="bluetooth-button" value="no">Нет</label>
-           <button type="submit" class="benifit-button">Показать</button>
+           <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="yes">Есть</label>
+           <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="no">Нет</label>
+          </fieldset>
+           <button type="submit" class="filter-button">Показать</button>
            </form>
           </section>
           <section class="goods-filter">
@@ -91,7 +98,7 @@
               <li class="goods-item">
                 <a href="#" class="goods-link">
                 <img src="images/products/amature.jpg" class="goods-img" alt="Любительская селфи-палка" height="380" width="360">
-                <p class="goods-name">Любительская<br>селфи-палка</p>
+                <p class="goods-name"><b>Любительская<br>селфи-палка</b></p>
                 <p class="goods-price">500 ₽</p>
                 </a>
               </li>
@@ -117,15 +124,15 @@
                 </a>
               </li>
               </ul>
-              <button class="download-more">Загрузить ещё</button>
+              <button class="download-more" type="button">Загрузить ещё</button>
             <section class="catalogue-pages">
-             <a href="#">Назад</a>
-             <a href="#">1</a>
-             <a href="#">2</a>
-             <a href="#">3</a>
-             <a href="#">...</a>
-             <a href="#">15</a>
-             <a href="#">Вперёд</a>
+             <a class="catalogue-link-pages-back" href="#">Назад</a>
+             <a class="catalogue-link-pages" href="#">1</a>
+             <a class="catalogue-link-pages" href="#">2</a>
+             <a class="catalogue-link-pages" href="#">3</a>
+             <a class="catalogue-link-pages" href="#">...</a>
+             <a class="catalogue-link-pages" href="#">15</a>
+             <a class="catalogue-link-pages-forward" href="#">Вперёд</a>
             </section>
           </section>
          </main>
@@ -133,7 +140,7 @@
           <a href="#" class="logo-footer">
             <img src="images//logos/footer-logo.svg" height="36" width="145" alt="DEVICE">
           </a>
-          <p>Санкт-Петербург, набережная<br>
+          <p class="footer-adress">Санкт-Петербург, набережная<br>
           реки Карповки, 5, литера П.</p>
           <ul class="footer-navigation-list">
           <li class="footer-item">
