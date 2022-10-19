@@ -44,20 +44,20 @@ body {
 
 .width-container {
   width: 1160px;
-  margin: auto;
+  margin:  0 auto;
 }
 
-.page-header {
+.header-wrapper {
   background-image: linear-gradient(#FFFFFF 20px,#FFE17F 20px);
 }
 
 .logo {
-  margin-left: auto;
+  margin-left: 60px;
 }
 
 .header-menu {
   display: flex;
-  margin-left: auto;
+  margin-left: 60px;
 }
 
 .site-search {
@@ -134,7 +134,7 @@ body {
 
 .navigation-list {
   display: flex;
-  margin-left: auto;
+  margin-left: 60px;
 }
 
 .navigation-item-delivery {
@@ -153,7 +153,6 @@ body {
 
 .navigation-points {
   display: flex;
-  margin-right: 60px;
   padding: 0;
 }
 
@@ -197,14 +196,14 @@ body {
   display: none;
 }
 
-.slider {
+.slider-wrapper {
   background-image: linear-gradient(#FFE17F 235px, #FFFFFF 235px);
 }
 
 .slider-photo {
   display: flex;
   margin-top: 35px;
-  margin-left: -80px;
+  /*margin-left: -80px;*/
   margin-right: 40px;
 }
 
@@ -284,11 +283,8 @@ body {
   background-image:  linear-gradient(#FFFFFF 170px, #F0F0F0 10px);
 }
 
-.width-container-for-benifits {
-  width: 1160px;
+.benifits-container {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .benifit-list {
@@ -337,7 +333,7 @@ body {
 }
 
 .rare-item-delivery {
-  width: 1035px;
+  width: 100%;
   height: 100px;
   font-family: "Raleway", sans-serif;
   color: #000000;
