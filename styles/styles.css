@@ -485,29 +485,56 @@ body {
   padding-top: 62px;
 }
 
-.footer-adress-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.grid-footer {
+  display: grid;
+  width: 1160px;
+  height: 280px;
+  grid-template-columns: 360px 444px 360px;
+}
 
+.grid-footer-container-2 {
+  display: grid;
+  padding-top: 60px;
+  row-gap: 63px;
+  margin-left: 40px;
+}
+
+.grid-footer-container-3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 63px;
+  padding-top: 80px;
+  margin-left: 160px;
+  /*padding-left: 160px;*/
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 36px;
 }
 
 .footer-adress {
   color:#FFFFFF;
   line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-phone {
   color: #FFFFFF;
+  display: inline-block;
 }
 
 .footer-navigation-list {
-  display: flex;
+  display: grid;
+  width: 444px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 35px;
+  padding: 0;
 }
 
 .footer-item {
   list-style: none;
-  margin-left: 35px;
 }
 
 .footer-navigation-link {
@@ -518,23 +545,23 @@ body {
   letter-spacing: 0.2em;
 }
 
-.sb-wrapper {
-  display: flex;
-  margin-top: 63px;
-  margin-left: 424px;
-
-}
-
 .social-buttons {
-  display: flex;
+  width: 110px;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  gap: 50px;
+  padding: 0;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
 .social-button {
-  margin-right: 15px;
+  list-style: none;
 }
 
 .academylogo {
-  margin-left: 300px;
+  display: inline-block;
+  margin-left: 90px;
 }
 
 .main-title-catalogue {
@@ -616,10 +643,13 @@ display: flex;
 }
 
 .goods {
-  display: flex;
-  max-width: 800px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 44px;
   margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 0;
 }
 
 
