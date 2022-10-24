@@ -14,18 +14,18 @@
           <img src="images//logos/logo.svg" height="36" width="145" alt="DEVICE">
         </a>
         <div class="header-menu">
-          <form class="site-search-catalogue">
+          <form class="search-catalogue">
             <input type="search" name="search" id="search" class="search" placeholder="Поиск по сайту">
             <button type="submit" class="search-button">Найти</button>
           </form>
           <ul class="main-menu-catalogue">
-            <li class="menu-items-catalogue">
+            <li class="menu-items-catalogue-enter">
               <a href="#" class="menu-button">Коля Петухов</a>
             </li>
-            <li class="menu-items-catalogue">
+            <li class="menu-items-catalogue-exit">
               <a href="#" class="menu-button-exit">Выйти</a>
             </li>
-            <li class="menu-items-catalogue">
+            <li class="menu-items-compare">
               <a href="#" class="menu-button">Сравнить</a>
             </li>
             <li class="menu-items-catalogue">
@@ -34,8 +34,8 @@
           </ul>
         </div>
         <nav class="navigation">
-          <div class="navigation-list">
-            <button type="button" class="navigation-button-catalogue">Каталог товаров</button>
+          <div class="navigation-list catalogue-navigation-wrapper">
+            <button type="button" class="navigation-button">Каталог товаров</button>
             <ul class="navigation-points">
               <li class="navigation-item-delivery"><a href="#" class="navigation-link">Доставка</a></li>
               <li class="navigation-item-warranty"><a href="#" class="navigation-link">Гарантия</a></li>
@@ -71,7 +71,7 @@
               <h4 class="filter-title-group"> Фильтр:</h4>
               <form class="all-catalogue-filters">
                 <fieldset class="fieldset-filter">
-                  <legend class="filter-legend">Стоимость</legend>
+                  <legend class="filter-legend legend-price">Стоимость</legend>
                   <input type="range" min="0" max="16000" class="price-filter">
                   <div class="price-filter-wrapper">
                     <p class="price-start">от 0</p>
@@ -80,7 +80,7 @@
                 </fieldset>
                 <!--Фильтр цвет-->
                 <fieldset class="fieldset-filter">
-                  <legend class="filter-legend">Цвет</legend>
+                  <legend class="filter-legend legend-color">Цвет</legend>
                   <div class="color-checkbox-wrapper">
                     <input type="checkbox" name="color" id="color-black" checked class="checkbox-color">
                     <label for="color-black" class="color-name">Чёрный</label>
@@ -104,10 +104,12 @@
                 </fieldset>
                 <!--Фильтр Bluetooth-->
                 <fieldset class="fieldset-filter">
-                  <legend class="filter-legend">Bluetooth</legend>
+                  <legend class="filter-legend bluetooth-legend">Bluetooth</legend>
                   <div class="bt-button-wrapper">
-                    <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="yes">Есть</label>
-                    <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="no">Нет</label>
+                    <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="yes"><span
+                        class="bt-answer-filter">Есть</span></label>
+                    <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="no"><span
+                        class="bt-answer-filter">Нет</span></label>
                   </div>
                 </fieldset>
                 <button type="submit" class="filter-button">Показать</button>
@@ -118,11 +120,11 @@
               <section class="goods-filter">
                 <h4 class="filter-title">Сортировка:</h4>
                 <select>
-                  <option>Популярные</option>
+                  <option class="option-filter">Популярные</option>
                 </select>
                 <div class="arrow-filters">
-                  <button type="button" class="arrow-filter-up">По возрастанию</button>
-                  <button type="button" class="arrow-filter-down">По убыванию</button>
+                  <button type="button" class="arrow-filter filter-up">1</button>
+                  <button type="button" class="arrow-filter filter-down">2</button>
                 </div>
               </section>
               <!--Карточки товаров-->
@@ -199,6 +201,7 @@
             </div>
           </section>
         </div>
+      </div>
     </main>
     <!--Футер-->
     <footer class="page-footer">
