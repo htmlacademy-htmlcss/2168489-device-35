@@ -138,7 +138,7 @@ body {
 
 .menu-items-compare {
   list-style: none;
-  margin-right: 25px;
+  margin-right: 20px;
   padding: 0;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .basket-menu {
-  padding-left: 24px;
+  padding-left: 38px;
 }
 
 .basket-menu::before {
@@ -578,6 +578,7 @@ body {
 }
 
 .catalogue-link {
+  display: block;
   font-family: "Raleway", sans-serif;
   color: #000000;
   text-decoration: none;
@@ -607,34 +608,40 @@ body {
 }
 
 .benifits {
-  background-image: linear-gradient(#FFFFFF 130px, #F0F0F0 130px);
+  background-image: linear-gradient(#FFFFFF 100px, #F0F0F0 100px);
 }
 
 .benifits-container {
   display: flex;
   position: relative;
-  background-image: url('/images/delivery/delivery-guy.png');
-  background-repeat: no-repeat;
-  background-position: left 950px bottom 155px;
 }
 
 .benifit-list {
   display: flex;
   flex-direction: column;
   margin-right: 123px;
+  margin-bottom: 137px;
   margin-left: 0;
+  margin-top: 0;
   padding: 0;
 }
 
 .benifit-description {
-  margin-top: 100px;
+  margin-top: 72px;
   margin-bottom: 143px;
+  position: relative;
 }
 
 .info-text-benifits {
   margin-top: 34px;
   margin-bottom: 0;
   min-width: 448px;
+}
+
+.delivery-guy {
+  position:absolute;
+  left: 600px;
+  bottom: 50px;
 }
 
 .benifit-item {
@@ -673,12 +680,22 @@ body {
   outline-offset: 2px;
 }
 
+.benifit-warranty {
+  width: 280px;
+  height: 40px;
+  margin-top: 47px;
+  margin-bottom: 55px;
+}
+
+.benifit-warranty:active {
+  background-color: #000000;
+}
+
+
 .gb-warranty {
   width: 160px;
   height: 40px;
   background-image: linear-gradient(to bottom, #F0F0F0 0, #F0F0F0 15px, #FFE17F 15px, #FFE17F 23px, #F0F0F0 23px, #F0F0F0 40px);
-  margin-top: 47px;
-  margin-bottom: 55px;
 }
 
 .gb-warranty:active {
@@ -686,7 +703,6 @@ body {
   height: 40px;
   background-image: linear-gradient(#000000 0, #000000 20px, #000000 20px, #000000 40px);
   color: #FFE17F;
-  padding: 9px 273px 9px 7px;
 }
 
 .gb-warranty:focus-visible {
@@ -698,8 +714,15 @@ body {
   width: 160px;
   height: 40px;
   background-image: linear-gradient(to bottom, #F0F0F0 0, #F0F0F0 15px, #FFE17F 15px, #FFE17F 23px, #F0F0F0 23px, #F0F0F0 40px);
-  padding: 0 0 0 7px;
-  margin: 0;
+}
+
+.benifit-credit {
+  width: 280px;
+  height: 40px;
+}
+
+.benifit-credit:active {
+  background-color: #000000;
 }
 
 .gb-credit:active {
@@ -707,7 +730,6 @@ body {
   height: 40px;
   background-image: linear-gradient(#000000 0, #000000 20px, #000000 20px, #000000 40px);
   color: #FFE17F;
-  padding: 9px 273px 9px 7px;
 }
 
 .gb-credit:focus-visible {
@@ -1358,18 +1380,88 @@ body {
 .goods-item {
   list-style: none;
   margin-right: 40px;
+  position: relative;
 }
 
 .goods-link {
   text-decoration: none;
+  display: block;
+}
+.new:before {
+content: "new";
+font-family: "Raleway", sans-serif;
+font-size: 18px;
+color: #000000;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+padding-top: 7px;
+padding-bottom: 5px;
+padding-left: 8px;
+padding-right: 5px;
+position: absolute;
+line-height: 3;
+top: 29px;
+right: 27px;
+width: 60px;
+height: 60px;
+text-align: center;
+border: 3px solid #000;
+border-radius: 50%;
+opacity: 0.6;
+}
+
+.more {
+  display: none;
 }
 
 .goods-link:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+.goods-link:hover .more {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  padding-left: 40px;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  right: 0;
+  border: 0;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 10px, #FFE17F 10px, #FFE17F 18px, transparent 18px, transparent 40px);
+}
+
+.goods-link:active .more {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  padding-left: 40px;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  right: 0;
+  border: 0;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 10px, #FFC700 10px, #FFC700 18px, transparent 18px, transparent 40px);
+}
+
+.goods-img::after {
+background-image: url(/images/products/new.svg);
+background-repeat: no-repeat;
 }
 
 .goods-link:focus-visible {
-
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1424,8 +1516,8 @@ body {
   display: flex;
   background-color: #EBEBEB;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 770px;
+  height: 71px;
   padding-right: 0;
   padding-left: 0;
   margin: 44px 40px 78px 40px;
@@ -1433,6 +1525,8 @@ body {
 
 .pagination-item {
   list-style: none;
+  width: 44px;
+  height: 44px;
 }
 
 .pagination-item-back {
@@ -1447,23 +1541,32 @@ body {
 }
 
 .catalogue-link-pages {
+  display: inline-block;
   color: #444444;
+  opacity: 0.3;
   text-decoration: none;
   margin-right: 30px;
+  padding: 6px;
+}
+
+.catalogue-link-pages:hover {
+  opacity: 1;
 }
 
 .catalogue-link-pages-back {
   font-family: "Raleway", sans-serif;
-  color: #444444;
+  color: #000000;
   font-size: 18px;
+  width: 750px;
+  height: 71px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-decoration: none;
-  opacity: 0.5;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 25px;
+  margin-left: 2px;
+  padding-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
 }
 
 .catalogue-link-pages-back:active {
@@ -1473,18 +1576,23 @@ body {
 .catalogue-link-pages-back:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+  opacity: 1;
 }
 
 .catalogue-link-pages-forward {
   font-family: "Raleway", sans-serif;
   color: #000000;
+  font-size: 18px;
+  width: 750px;
+  height: 71px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-decoration: none;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 25px;
+  margin-right: 2px;
+  padding-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
 }
 
   .catalogue-link-pages-forward:active {
