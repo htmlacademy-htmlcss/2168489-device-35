@@ -36,7 +36,36 @@
         </div>
         <nav class="navigation">
           <div class="navigation-list">
-            <button type="button" class="navigation-button">Каталог товаров</button>
+            <button type="button" class="navigation-button">Каталог товаров
+              <ul class="main-navigation-button-menu navigation-button-menu-open">
+                <li class="first-navigation-menu-column">
+                  <ul class="navigation-button-menu-wrapper">
+                    <li class="navigation-button-menu-item"><a href="#" class="navigation-button-menu-link">Виртуальная
+                        реальность</a></li>
+                    <li class="navigation-button-menu-item"><a href="#" class="navigation-button-menu-link">Моноподы для
+                        селфи</a></li>
+                    <li class="navigation-button-menu-item"><a href="#"
+                        class="navigation-button-menu-link">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+                <li class="second-navigation-menu-column">
+                  <ul>
+                    <li class="navigation-button-menu-item"><a href="#"
+                        class="navigation-button-menu-link">Фитнес-браслеты</a></li>
+                    <li class="navigation-button-menu-item"><a href="#" class="navigation-button-menu-link">Умные
+                        часы</a>
+                    </li>
+                </li>
+              </ul>
+              <li class="third-navigation-menu-column">
+                <ul>
+                  <li class="navigation-button-menu-item"><a href="#"
+                      class="navigation-button-menu-link">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+
+              </ul>
+            </button>
             <ul class="navigation-points">
               <li class="navigation-item-delivery"><a href="#" class="navigation-link">Доставка</a></li>
               <li class="navigation-item-warranty"><a href="#" class="navigation-link">Гарантия</a></li>
@@ -75,7 +104,7 @@
                   <legend class="filter-legend legend-price">Стоимость</legend>
                   <div class="range">
                     <div class="range-scale">
-                      <div class="range-bar" style="width: 93px; left: 119px;">
+                      <div class="range-bar" style="width: 82px; left: 119px;">
                         <button type="button" class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
@@ -95,56 +124,56 @@
                   </div>
                 </fieldset>
                 <!--Фильтр цвет-->
-                <fieldset class="fieldset-filter">
+                <fieldset class="fieldset-filter fieldset-filter-color">
                   <legend class="filter-legend legend-color">Цвет</legend>
                   <ul class="color-checkbox-list">
                     <li class="color-checkbox-wrapper">
                       <label for="color-black" class="control-color">
-                        <input type="checkbox" name="color" id="color-black" value="black" checked
-                          class="visually-hidden checkbox-color">
+                        <input type="checkbox" name="color" id="color-black" value="black"
+                          class="visually-hidden checkbox-color" checked disabled>
                         <span class="control-mark"></span>
                         <span class="color-name">Чёрный</span></label>
                     </li>
                     <li class="color-checkbox-wrapper">
                       <label for="color-white" class="control-color">
-                        <input type="checkbox" name="color" id="color-white" value="white" checked
-                          class="visually-hidden checkbox-color">
+                        <input type="checkbox" name="color" id="color-white" value="white"
+                          class="visually-hidden checkbox-color" checked disabled>
                         <span class="control-mark"></span>
                         <span class="color-name">Белый</span>
                       </label>
                     </li>
                     <li class="color-checkbox-wrapper">
                       <label for="color-blue" class="control-color">
-                        <input type="checkbox" name="color" id="color-blue" value="blue" class="visually-hidden checkbox-color">
+                        <input type="checkbox" name="color" id="color-blue" value="blue" class="visually-hidden checkbox-color" disabled>
                         <span class="control-mark"></span>
                         <span class="color-name">Синий</span></label>
                     </li>
                     <li class="color-checkbox-wrapper">
                       <label for="color-red" class="control-color">
-                        <input type="checkbox" name="color" id="color-red" value="red" class="visually-hidden checkbox-color">
+                        <input type="checkbox" name="color" id="color-red" value="red" class="visually-hidden checkbox-color" disabled>
                         <span class="control-mark"></span>
                         <span class="color-name">Красный</span></label>
                     </li>
                     <li class="color-checkbox-wrapper">
                       <label for="color-pink" class="control-color">
-                        <input type="checkbox" name="color" id="color-pink" value="pink" class="visually-hidden checkbox-color">
+                        <input type="checkbox" name="color" id="color-pink" value="pink" class="visually-hidden checkbox-color" disabled>
                         <span class="control-mark"></span>
                         <span class="color-name">Розовый</span></label>
                     </li>
                   </ul>
                 </fieldset>
                 <!--Фильтр Bluetooth-->
-                <fieldset class="fieldset-filter">
+                <fieldset class="fieldset-filter fieldset-filter-bluetooth">
                   <legend class="filter-legend bluetooth-legend">Bluetooth</legend>
                   <ul class="bt-button-wrapper">
                     <li class="bt-item">
                       <label class="bluetooth-button"><input class="visually-hidden bt-checkbox" type="radio"
-                          name="bluetooth-button" value="yes" checked><span class="radio-mark"></span>
+                          name="bluetooth-button" value="yes" checked checked disabled><span class="radio-mark"></span>
                         <span class="bt-answer-filter">Есть</span></label>
                     </li>
                     <li class="bt-item">
                       <label class="bluetooth-button"><input type="radio" name="bluetooth-button" value="no"
-                          class="visually-hidden bt-checkbox"><span class="radio-mark"></span>
+                          class="visually-hidden bt-checkbox" disabled><span class="radio-mark"></span>
                         <span class="bt-answer-filter">Нет</span></label>
                     </li>
                   </ul>
@@ -195,7 +224,7 @@
                         height="380" width="360">
                       <div class="goods-name-price">
                         <p class="goods-name">Профессиональная<br>селфи-палка</p>
-                        <p class="goods-price">1500 ₽</p>
+                        <p class="goods-price">1 500 ₽</p>
                       </div>
                     </a>
                   </li>
@@ -206,7 +235,7 @@
                         height="380" width="360">
                       <div class="goods-name-price">
                         <p class="goods-name">Непотопляемая<br>селфи-палка</p>
-                        <p class="goods-price">2500 ₽</p>
+                        <p class="goods-price">2 500 ₽</p>
                       </div>
                     </a>
                   </li>
@@ -217,7 +246,7 @@
                         height="380" width="360">
                       <div class="goods-name-price">
                         <p class="goods-name">Селфи-палка «Следуй<br>за мной»</p>
-                        <p class="goods-price">1500 ₽</p>
+                        <p class="goods-price">1 500 ₽</p>
                       </div>
                     </a>
                   </li>
