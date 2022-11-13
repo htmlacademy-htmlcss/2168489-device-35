@@ -1,5 +1,3 @@
-/*Шрифты*/
-
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -546,8 +544,8 @@ body {
   min-height: 180px;
   background-color: #FFE17F;
   position: absolute;
-  top: 60px;
-  left: -60px;
+  top: 220px;
+  left: 180px;
   margin: 0;
   padding: 0;
   display: none;
@@ -1079,12 +1077,6 @@ body {
   margin-bottom: 70px;
 }
 
-
-/*Класс включается при клике на кнопку меняет .rare-item-delivery */
-.rare-item-delivery-click {
-  display: none;
-}
-
 /*Кнопка - Товар под заказ*/
 
 .rare-item-content {
@@ -1120,10 +1112,6 @@ body {
 
 .rare-item-delivery:active {
   opacity: 0.3;
-}
-
-.open-modal:active {
-  display: none;
 }
 
 .rare-item-delivery:focus-visible {
@@ -1437,6 +1425,7 @@ body {
   letter-spacing: 0.2em;
   margin-top: 3px;
   margin-right: 30px;
+  border-bottom: 2px transparent solid;
 }
 
 .footer-navigation-link:hover {
@@ -1683,6 +1672,10 @@ body {
 .bluetooth-button:focus-within .radio-mark {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.bluetooth-button:disabled {
+  opacity: 0.1;
 }
 
 .radio-mark {
@@ -2270,9 +2263,6 @@ body {
 
 /*Модальное окно*/
 
-.open-modal:active {
-  display: none;
-}
 
 .modal-container {
   position: fixed;
@@ -2446,6 +2436,8 @@ body {
   margin-right: 75px;
 }
 
+/*Тултип*/
+
 .tooltip-toggle {
   border: none;
   background-color: transparent;
@@ -2477,8 +2469,8 @@ body {
   padding-left: 10px;
   padding-right: 15px;
   padding-bottom: 10px;
-  top: 32px;
-  left: 572px;
+  top: 40px;
+  left: 585px;
   display: none;
   z-index: 2;
 }
