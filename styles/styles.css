@@ -439,6 +439,7 @@ body {
   flex-wrap: wrap;
   margin-left: 60px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .catalogue-navigation-wrapper {
@@ -544,8 +545,8 @@ body {
   min-height: 180px;
   background-color: #FFE17F;
   position: absolute;
-  top: 220px;
-  left: 180px;
+  top: 61px;
+  left: -60px;
   margin: 0;
   padding: 0;
   display: none;
@@ -1654,6 +1655,10 @@ body {
   border: 3px solid #000000;
 }
 
+.checkbox-color[type="checkbox"]:disabled + .control-mark + .color-name {
+  opacity: 0.1;
+}
+
 .bluetooth-button {
   color: #000000;
   font-size: 16px;
@@ -1672,10 +1677,6 @@ body {
 .bluetooth-button:focus-within .radio-mark {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-}
-
-.bluetooth-button:disabled {
-  opacity: 0.1;
 }
 
 .radio-mark {
@@ -1697,7 +1698,7 @@ body {
   border: 2px solid #000000;
 }
 
-.bt-checkbox:disabled {
+.bt-checkbox[type="radio"]:disabled + .radio-mark + .bt-answer-filter {
   opacity: 0.1;
 }
 
